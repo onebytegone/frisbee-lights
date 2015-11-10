@@ -12,7 +12,8 @@ BatteryThicknessBuffer = 1;
 BatteryDiameter = 21;
 BatteryGripSize = 6;
 
-LedDiameter = 4;
+WireChannelDiameter = 4;
+LedDiameter = 6.2;
 
 WireDiameter = 1.5;
 
@@ -25,9 +26,12 @@ ArmLength = 30;
 ArmThickness = 1.5;
 ArmWidth = 3.2;
 
-LedClipThickness = 4;
-LedClipWall = 1.5;
+LedSupportWallThickness = 2;
+LedSupportWallLength = 4;
+LedClipThickness = 3.7;
+LedClipTopWall = 1.5;
 LedClipCorner = 3;
+WireChannelLip = 0.8;
 
 BatteryHolderWallThickess = 2;
 BatteryHolderFace = 0.75;
@@ -41,8 +45,9 @@ Overlap = 0.1;
 
 TotalArmSpan = ArmLength * 2 + ArmWidth;
 
-LedClipWidth = LedClipWall * 2 + LedDiameter;
-LedClipHeight = ArmThickness + LedDiameter + LedClipWall;
+LedClipWidth = LedSupportWallThickness * 2 + LedDiameter;
+LedClipHeight = ArmThickness + WireChannelDiameter + LedClipTopWall;
+WireChannelCutout = WireChannelDiameter - WireChannelLip * 2;
 
 BatteryCutoutThickness = BatteryThickness + BatteryThicknessBuffer;
 BatteryHolderWidth = BatteryHolderWallThickess * 2 + BatteryDiameter;

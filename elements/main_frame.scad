@@ -9,16 +9,19 @@ module main_frame() {
 
 module arm() {
    translate([-ArmWidth/2, -TotalArmSpan/2]) cube([ArmWidth, TotalArmSpan, ArmThickness]);
-   translate([0, -TotalArmSpan/2]) ledClip();
+   rotate([0,0,180])  translate([0, TotalArmSpan/2 - LedClipThickness]) ledClip();
    translate([0, TotalArmSpan/2 - LedClipThickness]) ledClip();
 }
 
 module ledClip() {
    difference() {
-      translate([-LedClipWidth/2, 0]) cube([LedClipWidth,  LedClipThickness, LedClipHeight]);
-      translate([LedClipWidth/2, 0, LedClipHeight]) rotate([-90,0]) CornerCutout(CORNER_SE, LedClipThickness, LedClipCorner);
-      translate([-LedClipWidth/2, 0, LedClipHeight]) rotate([-90,0]) CornerCutout(CORNER_SW, LedClipThickness, LedClipCorner);
-      translate([0, -Overlap, ArmThickness + LedDiameter/2]) rotate([-90, 0]) cylinder(h = LedClipThickness + Overlap * 2, r = LedDiameter/2);
+      totalLength = LedClipThickness + LedSupportWallLength;
+      translate([-LedClipWidth/2, 0]) cube([LedClipWidth,  totalLength, LedClipHeight]);
+      translate([LedClipWidth/2, 0, LedClipHeight]) rotate([-90,0]) CornerCutout(CORNER_SE, totalLength, LedClipCorner);
+      translate([-LedClipWidth/2, 0, LedClipHeight]) rotate([-90,0]) CornerCutout(CORNER_SW, totalLength, LedClipCorner);
+      translate([0, -Overlap, ArmThickness + WireChannelDiameter/2]) rotate([-90, 0]) cylinder(h = LedClipThickness + Overlap * 2, r = WireChannelDiameter/2);
+      translate([-WireChannelCutout/2, -Overlap, ArmThickness + WireChannelDiameter/2]) cube([WireChannelCutout, LedClipThickness + Overlap * 2, LedClipHeight/2 + Overlap]);
+      translate([-LedDiameter/2, LedClipThickness, -Overlap]) cube([LedDiameter, LedSupportWallLength + Overlap, LedClipHeight + Overlap * 2]);
    }
 }
 
