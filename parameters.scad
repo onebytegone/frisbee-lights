@@ -23,7 +23,7 @@ WireDiameter = 1.5;
 
 ArmLength = 30;
 ArmThickness = 1.5;
-ArmWidth = 3;
+ArmWidth = 3.2;
 
 LedClipThickness = 4;
 LedClipWall = 1.5;
