@@ -2,6 +2,12 @@
 
 This is a LED bracket that attaches to a frisbee. The goal is to make it possible to play frisbee at night.
 
+## Current version report
+
+So far, v1.1 has lasted for about 2hr of fairly rough play from the frisbee's standpoint that is. This is an improvement over v1.0 which started to have issues after ~45min and failed at about the 2hr mark.
+
+One downside with v1.1, it seems to be heavier than v1.0. It appears to impact the flight of the disc a little more than I would like. Don't have any hard data on this however.
+
 
 ## Changelog
 
