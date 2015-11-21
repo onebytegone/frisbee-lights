@@ -2,6 +2,15 @@
 
 This is a LED bracket that attaches to a frisbee. The goal is to make it possible to play frisbee at night.
 
+### Supplies
+
+  * 1x 3D-printed frame ([assembled.stl](exports/assembled.stl))
+  * 4x 5mm LED in color of your choice
+  * 1x Resistor (Might not be needed depending on the LEDs)
+  * 1x CR2032 coin cell
+  * Wire
+
+
 ## Current version report
 
 So far, v1.1 has lasted for about 2hr of fairly rough play from the frisbee's standpoint that is. This is an improvement over v1.0 which started to have issues after ~45min and failed at about the 2hr mark.
