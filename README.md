@@ -29,7 +29,7 @@ _Update 2015-12-05:_ v1.1 finally failed due to one of the arms braking. This is
   * v1.0 - Initial Design
     * Lasted for about 2hr of ultimate frisbee
     * LEDs tend to bend
-    * Assemby is hard due to solder joints in the clip
+    * Assembly is hard due to solder joints in the clip
     * 1 arm was broken off in play
 
 
