@@ -2,15 +2,16 @@ include <../parameters.scad>;
 include <../thirdparty/CornerCutout.scad>;
 
 module main_frame() {
-   arm();
-   rotate([0,0,90]) arm();
-   translate([0,0,ArmThickness]) rotate([0,0,45]) batteryHolder();
+   rotate([0,0,45]) {
+      batteryHolder();
+      rotate([0,0,90]) arm();
+   }
 }
 
 module arm() {
    translate([-ArmWidth/2, -TotalArmSpan/2]) cube([ArmWidth, TotalArmSpan, ArmThickness]);
-   rotate([0,0,180])  translate([0, TotalArmSpan/2 - LedClipThickness]) ledClip();
-   translate([0, TotalArmSpan/2 - LedClipThickness]) ledClip();
+   rotate([0,0,180])  translate([0, TotalArmSpan/2]) ledClip();
+   translate([0, TotalArmSpan/2]) ledClip();
 }
 
 module ledClip() {
@@ -28,11 +29,9 @@ module ledClip() {
 module batteryHolder() {
    difference() {
       batteryHolderShape(BatteryHolderWidth, BatteryGripSize, BatteryHolderThickness);
-      translate([0,0,BatteryHolderFace]) batteryHolderShape(BatteryDiameter, 0, BatteryCutoutThickness, BatteryHolderWallThickess + Overlap);
-      translate([BatteryHolderHoleDistance/2, 0, -Overlap]) cylinder(BatteryHolderFace + Overlap * 2, WireDiameter/2, WireDiameter/2);
-      translate([-BatteryHolderHoleDistance/2, 0, -Overlap]) cylinder(BatteryHolderFace + Overlap * 2, WireDiameter/2, WireDiameter/2);
+      translate([0,0,BatteryHolderBaseThickness]) batteryHolderShape(BatteryDiameter, 0, BatteryCutoutThickness, BatteryHolderWallThickess + Overlap);
       translate([0,0,BatteryHolderThickness - BatteryHolderFace - Overlap]) rotate([0,0,180]) batteryHolderShape(BatteryHolderWidth/3, 0, BatteryHolderFace + Overlap * 2);
-      translate([-BatteryDiameter/6, -BatteryHolderWidth/2 - Overlap, BatteryHolderFace]) cube([BatteryDiameter/3, BatteryHolderWidth + Overlap * 2, BatteryCutoutThickness]);
+      translate([-BatteryDiameter/6, -BatteryHolderWidth/2 - Overlap, BatteryHolderBaseThickness]) cube([BatteryDiameter/3, BatteryHolderWidth + Overlap * 2, BatteryCutoutThickness]);
    }
 
    translate([0,0,BatteryHolderThickness - BatteryHolderFace]) rotate([0,0,180]) difference() {
