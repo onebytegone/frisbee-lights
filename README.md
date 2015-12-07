@@ -22,7 +22,7 @@ _Update 2015-12-05:_ v1.1 finally failed due to one of the arms braking. This is
 
 ## Changelog
 
-  * v1.1 - Adjusted with notes form v1.0
+  * v1.1 - Adjusted with notes from v1.0
     * Has wider arms, LED supports, and a cutout for the wires to slide in
     * Requires some glue for assembly
     * Arms still tend to break off
