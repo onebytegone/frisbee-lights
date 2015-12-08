@@ -13,7 +13,7 @@ BatteryDiameter = 21;
 BatteryGripSize = 6;
 
 WireChannelDiameter = 4;
-LedDiameter = 6.2;
+LedDiameter = 6;
 
 WireDiameter = 1.5;
 
