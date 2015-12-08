@@ -25,9 +25,9 @@ WireDiameter = 1.5;
 ArmThickness = 1.5;
 ArmWidth = 3.2;
 
-LedSupportWallThickness = 2;
+LedSupportWallThickness = 1.5;
 LedSupportWallLength = 4;
-LedClipThickness = 3.7;
+LedClipThickness = 3;
 LedClipTopWall = 1.5;
 LedClipCorner = 3;
 
