@@ -34,11 +34,12 @@ LedClipCorner = 3;
 WireChannelLip = 0.8;
 WireChannelDepth = 2;
 
-GroundChannelHeight = 1;
+GroundChannelHeight = 1.8;
 GroundChannelWidth = 3;
 
 BatteryHolderWallThickess = 2;
 BatteryHolderFace = 0.75;
+BatteryHolderLowerFaceMin = 0.5;
 
 Overlap = 0.1;
 
@@ -56,7 +57,7 @@ BatteryHolderWidth = BatteryHolderWallThickess * 2 + BatteryDiameter;
 
 TotalArmSpan = WireChannelDepth * 2 + BatteryHolderWidth;
 
-BatteryHolderBaseThickness = ArmThickness + BatteryHolderFace;
+BatteryHolderBaseThickness = GroundChannelHeight + BatteryHolderLowerFaceMin;
 BatteryHolderThickness = BatteryHolderBaseThickness + BatteryHolderFace + BatteryCutoutThickness;
 
 LightenHoleDiameter = BatteryDiameter/3;
