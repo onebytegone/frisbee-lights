@@ -10,6 +10,9 @@ module main_frame() {
          }
          translate([-GroundChannelWidth/2,0,-Overlap]) cube([GroundChannelWidth, BatteryHolderWidth/2 + Overlap, GroundChannelHeight + Overlap]);
          translate([0,0,-Overlap]) cylinder(BatteryHolderBaseThickness + Overlap * 2, WireDiameter/2, WireDiameter/2);
+
+         translate([-LightenHoleOffset,0,-Overlap]) cylinder(BatteryHolderBaseThickness + Overlap * 2, LightenHoleDiameter/2, LightenHoleDiameter/2);
+         translate([LightenHoleOffset,0,-Overlap]) cylinder(BatteryHolderBaseThickness + Overlap * 2, LightenHoleDiameter/2, LightenHoleDiameter/2);
       }
    }
 }

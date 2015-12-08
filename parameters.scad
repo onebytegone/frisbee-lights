@@ -58,3 +58,6 @@ TotalArmSpan = WireChannelDepth * 2 + BatteryHolderWidth;
 
 BatteryHolderBaseThickness = ArmThickness + BatteryHolderFace;
 BatteryHolderThickness = BatteryHolderBaseThickness + BatteryHolderFace + BatteryCutoutThickness;
+
+LightenHoleDiameter = BatteryDiameter/3;
+LightenHoleOffset = BatteryDiameter/4;
