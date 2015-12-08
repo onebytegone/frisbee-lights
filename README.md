@@ -19,6 +19,7 @@ One downside with v1.1, it seems to be heavier than v1.0. It appears to impact t
 
 _Update 2015-12-05:_ v1.1 finally failed due to one of the arms braking. This is the same issue that killed v1.0. Possible solutions to this for v1.2 are increase arm thickness, drastically reduce the arm length, or switch to SMD LED's to reduce the arm height profile.
 
+_Update 2015-12-08:_ With v2.0, it is fairly easy to mount the unit using a piece of clear packing tape over the top. It is a little unstable on the side with the battery slot. To fix this, I'm recommending a small tab under the front of the battery slot to assist in mounting. For now, a piece of tape can go into the battery slot to hold that side down.
 
 ## Changelog
 
