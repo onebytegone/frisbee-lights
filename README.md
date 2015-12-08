@@ -22,6 +22,9 @@ _Update 2015-12-05:_ v1.1 finally failed due to one of the arms braking. This is
 
 ## Changelog
 
+  * v2.0 - Trying to eliminate the arm issues and lighten overall weight
+    * Reduced the LED count to 2
+    * Get rid of the LED arms
   * v1.1 - Adjusted with notes from v1.0
     * Has wider arms, LED supports, and a cutout for the wires to slide in
     * Requires some glue for assembly
