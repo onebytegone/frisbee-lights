@@ -5,7 +5,7 @@ This is a LED bracket that attaches to a frisbee. The goal is to make it possibl
 ### Supplies
 
   * 1x 3D-printed frame ([assembled.stl](exports/assembled.stl))
-  * 4x 5mm LED in color of your choice
+  * 2x 5mm LED in color of your choice (4x where needed for < v2.0)
   * 1x Resistor (Might not be needed depending on the LEDs)
   * 1x CR2032 coin cell
   * Wire
