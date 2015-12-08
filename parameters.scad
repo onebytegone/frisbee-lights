@@ -34,6 +34,9 @@ LedClipCorner = 3;
 WireChannelLip = 0.8;
 WireChannelDepth = 2;
 
+GroundChannelHeight = 1;
+GroundChannelWidth = 3;
+
 BatteryHolderWallThickess = 2;
 BatteryHolderFace = 0.75;
 

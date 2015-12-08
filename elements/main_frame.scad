@@ -3,8 +3,14 @@ include <../thirdparty/CornerCutout.scad>;
 
 module main_frame() {
    rotate([0,0,45]) {
-      batteryHolder();
-      rotate([0,0,90]) arm();
+      difference() {
+         union() {
+            batteryHolder();
+            rotate([0,0,90]) arm();
+         }
+         translate([-GroundChannelWidth/2,0,-Overlap]) cube([GroundChannelWidth, BatteryHolderWidth/2 + Overlap, GroundChannelHeight + Overlap]);
+         translate([0,0,-Overlap]) cylinder(BatteryHolderBaseThickness + Overlap * 2, WireDiameter/2, WireDiameter/2);
+      }
    }
 }
 
