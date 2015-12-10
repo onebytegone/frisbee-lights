@@ -43,8 +43,8 @@ GroundChannelHeight = 1.8;
 GroundChannelWidth = 3;
 
 BatteryHolderWallThickess = 2;
-BatteryHolderFace = 0.75;
-BatteryHolderLowerFaceMin = 0.5;
+BatteryHolderFace = 0.85;
+BatteryHolderLowerFaceMin = 0.55;
 
 Overlap = 0.1;
 
