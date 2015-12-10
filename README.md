@@ -21,6 +21,8 @@ _Update 2015-12-05:_ v1.1 finally failed due to one of the arms braking. This is
 
 _Update 2015-12-08:_ With v2.0, it is fairly easy to mount the unit using a piece of clear packing tape over the top. It is a little unstable on the side with the battery slot. To fix this, I'm recommending a small tab under the front of the battery slot to assist in mounting. For now, a piece of tape can go into the battery slot to hold that side down.
 
+_Update 2015-12-09:_ Using packing tape, over gaphers tape, seemed like a good idea. It tends to fail easily though. Either the frisbee needs to be prepped better or a different, or just stronger, tape is needed.
+
 ## Changelog
 
   * v2.0 - Trying to eliminate the arm issues and lighten overall weight
