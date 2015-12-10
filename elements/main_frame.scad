@@ -7,6 +7,7 @@ module main_frame() {
          union() {
             batteryHolder();
             rotate([0,0,90]) arm();
+            mountingTab();
          }
          translate([-GroundChannelWidth/2,0,-Overlap]) cube([GroundChannelWidth, BatteryHolderWidth/2 + Overlap, GroundChannelHeight + Overlap]);
          translate([0,0,-Overlap]) cylinder(BatteryHolderBaseThickness + Overlap * 2, WireDiameter/2, WireDiameter/2);
@@ -14,6 +15,16 @@ module main_frame() {
          translate([-LightenHoleOffset,0,-Overlap]) cylinder(BatteryHolderBaseThickness + Overlap * 2, LightenHoleDiameter/2, LightenHoleDiameter/2);
          translate([LightenHoleOffset,0,-Overlap]) cylinder(BatteryHolderBaseThickness + Overlap * 2, LightenHoleDiameter/2, LightenHoleDiameter/2);
       }
+   }
+}
+
+module mountingTab() {
+   halfWidth = MountingArmWidth/2;
+   translate([0, -MountingArmTotalLength]) difference() {
+      translate([-halfWidth, 0]) cube([MountingArmWidth, MountingArmTotalLength, MountingArmThickness]);
+
+      translate([halfWidth, 0]) CornerCutout(CORNER_SE, MountingArmThickness, MountingArmCorner);
+      translate([-halfWidth, 0]) CornerCutout(CORNER_SW, MountingArmThickness, MountingArmCorner);
    }
 }
 

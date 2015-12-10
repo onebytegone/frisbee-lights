@@ -31,6 +31,11 @@ LedClipThickness = 3;
 LedClipTopWall = 1.5;
 LedClipCorner = 3;
 
+MountingArmWidth = 8;
+MountingArmLength = 10;
+MountingArmThickness = 0.6;
+MountingArmCorner = 2;
+
 WireChannelLip = 0.8;
 WireChannelDepth = 2;
 
@@ -62,3 +67,5 @@ BatteryHolderThickness = BatteryHolderBaseThickness + BatteryHolderFace + Batter
 
 LightenHoleDiameter = BatteryDiameter/3;
 LightenHoleOffset = BatteryDiameter/4;
+
+MountingArmTotalLength = MountingArmLength + BatteryHolderWidth/2 - BatteryGripSize;
