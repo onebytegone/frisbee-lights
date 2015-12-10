@@ -25,6 +25,10 @@ _Update 2015-12-09:_ Using packing tape, over gaphers tape, seemed like a good i
 
 ## Changelog
 
+  * v2.1 - Improve mounting, simplify assembly
+    * Increased size of the ground channel to fit 1/6W resistor
+    * Add mounting tab on battery opening side
+    * Fine tuned various wall thicknesses
   * v2.0 - Trying to eliminate the arm issues and lighten overall weight
     * Reduced the LED count to 2
     * Get rid of the LED arms
