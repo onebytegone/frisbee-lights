@@ -27,7 +27,7 @@ ArmWidth = 3.2;
 
 LedSupportWallThickness = 1.5;
 LedSupportWallLength = 4;
-LedClipThickness = 3;
+LedClipThickness = 2.75;
 LedClipTopWall = 1.5;
 LedClipCorner = 3;
 
