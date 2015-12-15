@@ -23,8 +23,12 @@ _Update 2015-12-08:_ With v2.0, it is fairly easy to mount the unit using a piec
 
 _Update 2015-12-09:_ Using packing tape, over gaphers tape, seemed like a good idea. It tends to fail easily though. Either the frisbee needs to be prepped better or a different, or just stronger, tape is needed.
 
+_Update 2015-12-15:_ Cleaning the frisbee with rubbing alcohol helps remedy the tape adhesion issue. Some new issues with the battery staying in. A friction fit is no longer very suitable. Adding clips to help keep the battery in place.
+
 ## Changelog
 
+  * v2.2 - Improve battery retention
+    * Add clips to battery holder sides to keep battery in place.
   * v2.1 - Improve mounting, simplify assembly
     * Increased size of the ground channel to fit 1/6W resistor
     * Add mounting tab on battery opening side
