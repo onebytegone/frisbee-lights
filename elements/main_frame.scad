@@ -15,6 +15,8 @@ module main_frame() {
          translate([-LightenHoleOffset,0,-Overlap]) cylinder(BatteryHolderBaseThickness + Overlap * 2, LightenHoleDiameter/2, LightenHoleDiameter/2);
          translate([LightenHoleOffset,0,-Overlap]) cylinder(BatteryHolderBaseThickness + Overlap * 2, LightenHoleDiameter/2, LightenHoleDiameter/2);
       }
+      translate([-BatteryHolderWidth/2, -BatteryHolderWidth/2 + BatteryGripSize]) batteryClip();
+      mirror([1,0]) translate([-BatteryHolderWidth/2, -BatteryHolderWidth/2 + BatteryGripSize]) batteryClip();
    }
 }
 
@@ -25,6 +27,18 @@ module mountingTab() {
 
       translate([halfWidth, 0]) CornerCutout(CORNER_SE, MountingArmThickness, MountingArmCorner);
       translate([-halfWidth, 0]) CornerCutout(CORNER_SW, MountingArmThickness, MountingArmCorner);
+   }
+}
+
+module batteryClip() {
+   translate([BatteryHolderWallThickess - BatteryClipWallThickess, -BatteryClipLength]) {
+      difference() {
+         union() {
+            cube([BatteryClipWallThickess, BatteryClipLength + Overlap, BatteryClipHeight]);
+            translate([BatteryClipWallThickess, BatteryClipNubSize/2]) cylinder(BatteryClipHeight, BatteryClipNubSize/2, BatteryClipNubSize/2, $fn = 20);
+         }
+         CornerCutout(CORNER_SW, BatteryClipHeight, BatteryClipCorner);
+      }
    }
 }
 

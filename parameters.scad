@@ -46,6 +46,11 @@ BatteryHolderWallThickess = 2;
 BatteryHolderFace = 0.85;
 BatteryHolderLowerFaceMin = 0.55;
 
+BatteryClipNubSize = 1.7;
+BatteryClipNubShift = 2.4;
+BatteryClipCorner = 1;
+BatteryClipWallThickess = BatteryHolderWallThickess;
+
 Overlap = 0.1;
 
 
@@ -64,6 +69,9 @@ TotalArmSpan = WireChannelDepth * 2 + BatteryHolderWidth;
 
 BatteryHolderBaseThickness = GroundChannelHeight + BatteryHolderLowerFaceMin;
 BatteryHolderThickness = BatteryHolderBaseThickness + BatteryHolderFace + BatteryCutoutThickness;
+
+BatteryClipLength = BatteryClipNubShift + BatteryClipNubSize/2;
+BatteryClipHeight = BatteryHolderThickness;
 
 LightenHoleDiameter = BatteryDiameter/3;
 LightenHoleOffset = BatteryDiameter/4;
